@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Base font size */
+}
+
+header {
+    background: rgb(180, 152, 152);
+    border-radius: 5rem;
+    margin: 1.875rem auto;
+    width: 15.625rem;
+    height: 3.125rem;
+    padding-bottom: 0.9375rem;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    background: #ffffffbd;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    width: 5rem;
+    display: block;
+    padding: 1.875rem 0;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-align: center;
+    justify-items: center;
+}
+
+.navbar a:hover {
+    cursor: pointer;
+    background-color: #fffffff1;
+    transition: 0.5s;
+    border-radius: 1.25rem;
+}
+
+.description {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.description-second {
+    text-align: center;
+    margin-top: 3.125rem;
+}
+
+.description-second span {
+    color: #474040;
+}
+
+.navbar-link {
+    text-align: center;
+    margin: 1.25rem 0;
+    padding-bottom: 6.25rem;
+}
+
+.navbar-link ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-link li {
+    display: inline-block;
+}
+
+.navbar-link .m1 {
+    background-color: rgb(240, 231, 231);
+    border-radius: 1.25rem;
+    padding: 0.625rem;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.25rem;
+}
+
+.photos img {
+    margin: 0.5rem;
+    border-radius: 0.625rem;
+    width: 100%;
+    max-width: 34.375rem; /* Max width for images */
+    height: auto;
+    object-fit: cover; /* Ensures images are responsive without distortion */
+}
+
+footer {
+    text-align: center;
+    padding: 1.25rem;
+    font-size: 0.875rem;
+}
+
+.socials {
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    gap: 0.9375rem;
+}
+
+.socials a {
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 48em) { /* 768px and below */
+    .photos img {
+        max-width: 100%; /* Allow images to scale down to full width */
+    }
+
+    .navbar a {
+        font-size: 1rem; /* Increase font size for better readability */
+        padding: 1.25rem 0;
+    }
+
+    .description {
+        font-size: 2rem; /* Adjust the font size for smaller screens */
+    }
+
+    .navbar-link .m1 {
+        font-size: 1rem; /* Adjust size for navigation links */
+    }
+}
+
+@media (max-width: 37.5em) { /* 600px and below */
+    .navbar a {
+        font-size: 0.875rem; /* Slightly smaller font size */
+        padding: 1.125rem 0;
+    }
+
+    .description {
+        font-size: 1.75rem; /* Further reduce font size */
+    }
+
+    .socials {
+        flex-direction: column; /* Stack the social links vertically */
+    }
+}
